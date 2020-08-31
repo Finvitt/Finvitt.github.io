@@ -234,23 +234,47 @@ Finvitt
 
 <div style="background-color:white; box-shadow: -4px -4px 5px #ffffff50, 3px 3px 15px #00000050;">
   <!--AASTHA YOU HAVE TO START YOUR CODE HERE-->
+  <script>
+  function formcontroller()
+  {
+     var applyfor=document.selectform.checkbox.length;
+	 for(i=0;i<applyfor;i++)
+	 {
+	     var chkvalue="";
+		 var applycheck+=document.selectform.checkbox[i].checked;
+		 if(applycheck)
+		 {
+		 chkvalue=document.selectform.checkbox[i].value+"<br/>";
+		 }
+		 var result=chkvalue;
+		 document.getElementById("show").innerHTML=result;
+	 }
+  }
+  </script>
 Enter the application you want to apply for:</br>
-<input type="checkbox" />Company Name Availability<br/>
-<input type="checkbox" />Director Identification Number (DIN)<br/>
-<input type="checkbox" />Digital Signature Certificate(DSC)<br/>
-<input type="checkbox" />Incorporation Certificate<br/>
-<input type="checkbox" />Company Seal for official documentation<br/>
-<input type="checkbox" />Permanent Account Number (PAN)<br/>
-<input type="checkbox" />Tax Account Number (TAN)<br/>
-<input type="checkbox" />Certificate from the State/Municipal Inspector under the Shops and Establishment Act<br/>
-<input type="checkbox" />GST Registration<br/>
-<input type="checkbox" />Profession Tax Certificate<br/>
-<input type="checkbox" />National Employees' Provident Fund Registration<br/>
-<input type="checkbox" />Stamping of all Company Documents<br/>
+<form method="post" action="" name="selectform" onsubmit="formcontroller();">
+<input type="checkbox" name="checkbox" id="applyfor" value="Company Name Availability"/>Company Name Availability<br/>
+<input 	type="checkbox"name="checkbox" id="applyfor" value="Director Identification Number (DIN)"/>Director Identification Number (DIN)<br/>
+<input type="checkbox" name="checkbox" id="applyfor" value="Digital Signature Certificate(DSC)"/>Digital Signature Certificate(DSC)<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Incorporation Certificate"/>Incorporation Certificate<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Company Seal for official documentation"/>Company Seal for official documentation<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Digital Signature Certificate(DSC))"/>Permanent Account Number (PAN)<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Permanent Account Number (PAN)"/>Tax Account Number (TAN)<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Certificate from the State/Municipal Inspector under the Shops and Establishment Act"/>Certificate from the State/Municipal Inspector under the Shops and Establishment Act<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="GST Registration"/>GST Registration<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Profession Tax Certificate"/>Profession Tax Certificate<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="National Employees' Provident Fund Registration"/>National Employees' Provident Fund Registration<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Stamping of all Company Documents"/>Stamping of all Company Documents<br/>
+<input type="submit" name="submit" value="select">
+</form>
+<div id="show">
+</div>
+
   <!--AND END IT TILL THIS COMMENT-->
 </div>
 <p></p>
 </div>
+<script src="list.js"></script>
 </body>
 </html>
 
