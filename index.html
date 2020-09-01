@@ -36,6 +36,12 @@ box-shadow: -4px -4px 5px #ffffff50, 3px 3px 15px #00000050}
   right: 16px;
   z-index: +1;
 }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .WebsiteName {
   position: relative;
   text-align: center;
@@ -65,157 +71,52 @@ box-shadow: -4px -4px 5px #ffffff50, 3px 3px 15px #00000050}
   display: table;
   clear: both;
 }
-a.home:link {
+/*styling of links*/
+a {
   color: white;
 }
-a.home:visited {
+a:link {
   color: white;
 }
-a.home:hover {
-  color: gray;
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #DBDBDB;
 }
 
 /* selected link */
-
-
-a.home:active {
+a:active {
   color: white;
-}
-a.home:link {
+}a:link {
   text-decoration: none;
 }
 
-a.home:visited {
+a:visited {
   text-decoration: none;
 }
 
-a.home:hover {
-  text-decoration: none;
-}
-a.home:active {
-  text-decoration: none;
-}
-a.home:link {
-  color: white;
-}
-a.home:visited {
-  color: white;
-}
-a.home:hover {
-  color: gray;
-}
-
-/* selected link */
-a.profile:visited {
-  color: white;
-}
-a.profile:link {
-  color: white;
-}
-a.profile:active {
-  color: white;
-}
-a.profile:link {
+a:hover {
   text-decoration: none;
 }
 
-a.profile:visited {
+a:active {
   text-decoration: none;
 }
-
-a.profile:hover {
-  text-decoration: none;
+p
+{
+font-size:30px;
+font-family:sans-serif;
 }
-a.profile:active {
-  text-decoration: none;
+h1
+{
+font-size:45px;
+font-family:sans-serif;
 }
-a.profile:hover {
-  color: gray;
-}
-/* selected link */
-a.applyfor:visited {
-  color: white;
-}
-a.applyfor:link {
-  color: white;
-}
-a.applyfor:active {
-  color: white;
-}
-a.applyfor:link {
-  text-decoration: none;
-}
-
-a.applyfor:visited {
-  text-decoration: none;
-}
-
-a.applyfor:hover {
-  text-decoration: none;
-}
-a.applyfor:active {
-  text-decoration: none;
-}
-a.applyfor:hover {
-  color: gray;
-}
-/* selected link */
-a.info: link{
-  color: white;
-}
-    
-a.info:visited {
-  color: white;
-}
-
-a.info:active {
-  color: white;
-}
-a.info:link {
-  text-decoration: none;
-}
-
-a.info:visited {
-  text-decoration: none;
-}
-
-a.info:hover {
-  text-decoration: none;
-}
-a.info:active {
-  text-decoration: none;
-}
-a.info:hover {
-  color: gray;
-}
-/* selected link */
-a.appst:visited {
-  color: white;
-}
-a.appst:link {
-  color: white;
-}
-a.appst:active {
-  color: white;
-}
-a.appst:link {
-  text-decoration: none;
-}
-
-a.appst:visited {
-  text-decoration: none;
-}
-
-a.appst:hover {
-  text-decoration: none;
-}
-a.appst:active {
-  text-decoration: none;
-}
-a.appst:hover {
-  color: gray;
-}
-
 </style>
 <title>
 Finvitt
@@ -225,17 +126,21 @@ Finvitt
 <div class="WebsiteName">
 <!--<h1 style="font-size:60px; color:#4d004d;" align="center">
 &#128218 Finvitt &#128184</h1>-->
-<img style="position:relative;width:100%;height:10%" src="titleimg2.jpg" />
-<div class="bottom-left" style="font-size:35px; color:white;">
-<a class="home" href="index.html">Home&nbsp;&nbsp;&nbsp;</a>
-<a class="profile"href="ProfileBuilding.html">Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-<a class="applyfor"href="Applyfor.html">Apply&nbsp;For&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-<a class="appst"href="Application status.html">Application&nbsp;Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-<a class="info"href="SECTION1.html">Information&nbsp;Section</a></div>
+<img style="position:relative;width:100%;height:500px;" src="titleimg3.jpg" class="img1" />
+<div class="centered" >
+<h1 style="font-size:65px;background-color:green;">Finवित्त</h1>
 </div>
+<div class="bottom-left" style="font-size:35px; width:125%; color:white;background-color:black; padding:15px; opacity:0.5;">
+<a class="button" href="index.html">Home&nbsp;&nbsp;&nbsp;</a>
+<a class="button"href="ProfileBuilding.html">Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a class="button"href="Applyfor.html">Apply&nbsp;For&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a class="button"href="Application status.html">Application&nbsp;Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a class="button"href="SECTION1.html">Information&nbsp;Section</a></div>
+</div>
+
 <div class="row">
 
-<div style="background-color:white; box-shadow: -4px -4px 5px #ffffff50, 3px 3px 15px #00000050;">
+<div style="background-color:white; box-shadow: -4px -4px 5px #ffffff50, 3px 3px 15px #00000050; padding:70px ">
   <!--AASTHA YOU HAVE TO START YOUR CODE HERE-->
 <h1>About Finvitt...</h1>
 <p>
