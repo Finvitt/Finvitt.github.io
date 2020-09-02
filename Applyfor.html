@@ -107,6 +107,42 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+/*styling of links*/
+a.user {
+  color: black;
+}
+a.user:link {
+  color: black;
+}
+
+/* visited link */
+a.user:visited {
+  color: black;
+}
+
+/* mouse over link */
+a.user:hover {
+  color: #DBDBDB;
+}
+
+/* selected link */
+a.user:active {
+  color: black;
+}a.user:link {
+  text-decoration: none;
+}
+
+a.user:visited {
+  text-decoration: none;
+}
+
+a.user:hover {
+  text-decoration: none;
+}
+
+a.user:active {
+  text-decoration: none;
+}
 p
 {
 font-size:30px;
@@ -140,7 +176,7 @@ Finvitt
 <div class="centered" >
 <h1 style="font-size:65px;background-color:green;">Finवित्त</h1>
 </div>
-<div class="bottom-left" style="font-size:35px; width:100%; color:white;background-color:black; padding:15px; opacity:0.5;">
+<div class="bottom-left" style="font-size:35px; width:125%; color:white;background-color:black; padding:15px; opacity:0.5;">
 <a class="home" href="index.html">Home&nbsp;&nbsp;&nbsp;</a>
 <a class="profile"href="ProfileBuilding.html">Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 <a class="applyfor"href="Applyfor.html">Apply&nbsp;For&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -154,25 +190,25 @@ Finvitt
   <!--AASTHA YOU HAVE TO START YOUR CODE HERE-->
 <p title="Click on any form to get information, checkbox to apply">
 Enter the application you want to apply for:</br>
+(Tick box to apply, click to get info)
 <form title="Click to get information" method="post" action="" name="selectform" onsubmit="formcontroller();">
-<input type="checkbox" name="checkbox" id="applyfor" value="Company Name Availability"/>Company Name Availability<br/>
-<input 	type="checkbox"name="checkbox" id="applyfor" value="Director Identification Number (DIN)"/>Director Identification Number (DIN)<br/>
-<input type="checkbox" name="checkbox" id="applyfor" value="Digital Signature Certificate(DSC)"/>Digital Signature Certificate(DSC)<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="Incorporation Certificate"/>Incorporation Certificate<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="Company Seal for official documentation"/>Company Seal for official documentation<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="Digital Signature Certificate(DSC))"/>Permanent Account Number (PAN)<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="Permanent Account Number (PAN)"/>Tax Account Number (TAN)<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="Certificate from the State/Municipal Inspector under the Shops and Establishment Act"/>Certificate from the State/Municipal Inspector under the Shops and Establishment Act<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="GST Registration"/>GST Registration<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="Profession Tax Certificate"/>Profession Tax Certificate<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="National Employees' Provident Fund Registration"/>National Employees' Provident Fund Registration<br/>
-<input type="checkbox"name="checkbox"id="applyfor" value="Stamping of all Company Documents"/>Stamping of all Company Documents<br/>
+<input type="checkbox" name="checkbox" id="applyfor" value="Company Name Availability"/><a class="user" href="info.html#cna">Company Name Availability</a><br/>
+<input 	type="checkbox"name="checkbox" id="applyfor" value="Director Identification Number (DIN)"/><a class="user" href="info.html#din">Director Identification Number (DIN)</a><br/>
+<input type="checkbox" name="checkbox" id="applyfor" value="Digital Signature Certificate(DSC)"/><a class="user" href="info.html#dsc">Digital Signature Certificate(DSC)</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Incorporation Certificate"/><a class="user" href="info.html#ic">Incorporation Certificate</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Company Seal for official documentation"/><a class="user" href="info.html#cs">Company Seal for official documentation</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Digital Signature Certificate(DSC))"/><a class="user" href="info.html#pan">Permanent Account Number (PAN)</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Permanent Account Number (PAN)"/><a class="user" href="info.html#tan">Tax Account Number (TAN)</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Certificate from the State/Municipal Inspector under the Shops and Establishment Act"/><a class="user" href="info.html#cmi">Certificate from the State/Municipal Inspector under the Shops and Establishment Act</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="GST Registration"/><a class="user" href="info.html#gst">GST Registration</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Profession Tax Certificate"/><a class="user" href="info.html#ptc">Profession Tax Certificate<br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="National Employees' Provident Fund Registration"/><a class="user" href="info.html#epf">National Employees' Provident Fund Registration</a><br/>
+<input type="checkbox"name="checkbox"id="applyfor" value="Stamping of all Company Documents"/><a class="user" href="info.html#scd">Stamping of all Company Documents</a><br/>
 <input type="submit" name="submit" value="select">
 </form>
 </p>
   <!--AND END IT TILL THIS COMMENT-->
 </div>
-<p></p>
 </div>
 </body>
 </html>
